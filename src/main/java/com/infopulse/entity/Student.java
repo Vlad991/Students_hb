@@ -38,11 +38,12 @@ public class Student {
     @Column(name = "date_of_birth", nullable = false)
     private String dateOfBirth;
 
+ //   private GradePointAverage gradePointAverage;
+
     @ManyToOne
     @JoinColumn(name = "group_id")
     private Group group;
 
 
-    private Faculty faculty;
-    private GradePointAverage gradePointAverage;
+//    private Faculty faculty;
 }
